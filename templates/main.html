@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="refresh" content="5">
+	<meta charset="UTF-8">
+	<title>HTML Layouts</title>
+    <link href="static/CSS/style.css" rel="stylesheet" >
+</head>
+<body>
+    <div id="menu">
+        <div style="width: 97.7%; height:0px; position:absolute;
+        top:117px;border:solid 1px #979ea8 ;background-color: #979ea8; "></div>
+        <div class="menu_nav" style="background-color: #979ea8; border: #393E46;">
+            <a href="main.html" style="color: #393E46;">런닝머신 현황</a></div>
+        <div class="menu_nav"style="z-index: -1; background-color: #393E46;border: none;"></div>
+        <img id="logo" src="static/img/logo2.png"height="150px"
+        style="border-radius: 15px;">
+        <div class="menu_nav"><a href="main2.html">출입 로그</a></div>
+    </div>
+    <div id="main">
+        <div id="machineContainer">
+            <div class="runningMachine">
+                {% if machine1st=='0' %}
+                <img  src="static/img/empty_machine.png">
+                {% elif machine1st=='on' %}
+                <img  src="static/img/mask.png">
+                {% else %}
+                <img  src="static/img/no_mask.png">
+                {% endif %}
+                </div>
+            <div class="runningMachine">
+                {% if machine2st=='0' %}
+                <img  src="static/img/empty_machine.png">
+                {% elif machine2st=='on' %}
+                <img  src="static/img/mask.png">
+                {% else %}
+                <img  src="static/img/no_mask.png">
+                {% endif %}
+            </div>
+        </div>
+        <div id="imformation">
+            imformation
+            <ol style="list-style:none">
+            {% for i in imformationlist %}
+                <li>{{i}}</li>
+            {% endfor %}
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>

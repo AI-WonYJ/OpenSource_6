@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="refresh" content="5">
+	<meta charset="UTF-8">
+	<title>HTML Layouts</title>
+    <link href="static/CSS/style.css" rel="stylesheet">
+    <link href="static/CSS/style2.css" rel="stylesheet" >
+
+</head>
+<body>
+    <div id="menu">
+        <div style="width: 97.7%; height:0px; position:absolute;
+        top:117px;border:solid 1px #979ea8 ;background-color: #979ea8; "></div>
+        <div class="menu_nav"><a href="main.html">런닝머신 현황</a></div>
+        <div class="menu_nav"style="z-index: -1; background-color: #393E46;border: none;"></div>
+        <img id="logo" src="static/img/logo2.png" height="150px"
+        style="border-radius: 15px;" >
+        <div class="menu_nav" style=" border: solid #979ea8; background-color: #979ea8;">
+            <a href="main2.html" style="color:#393E46;">출입 로그</a></div>
+    </div>
+    <div id="main">
+        <duv id="date">
+            <ol>
+                <li>1</li>
+                <li>2</li>
+            </ol>
+        </duv>
+        <div id="log">
+            imformation
+            <ol style="list-style:none">
+            {% for i in imformationlist %}
+                <li>{{i}}</li>
+            {% endfor %}
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>
