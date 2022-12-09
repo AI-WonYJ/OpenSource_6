@@ -1,0 +1,25 @@
+#date{
+    margin-left: 10%;
+    height: 500px;
+    width: 200px;
+    float: left;
+    background-color: #d7f5ff;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+#date ol{
+    margin-left: 20px;
+}
+#log{
+    margin-left: 5%;
+    height: 90%;
+    width: 60%;
+    float: left;
+    background-color: #d7f5ff;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#log ul{
+    margin-left: 20px;
+}
